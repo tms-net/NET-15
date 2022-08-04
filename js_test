@@ -1,0 +1,29 @@
+console.log("Two products");
+let list_ = ['Apple', 'Beef'];
+
+for (var i = 0, l = list_.length; i < l; i++) {
+    console.log(list_[i]);
+}
+
+
+
+
+const mums_products = {
+    first: 'apple',
+    second: 'meat',
+    prod_list: function()
+    {
+        console.log(this.first, this.second);
+    }
+
+}
+
+
+const sons_products = {
+    first: 'candy',
+    second: 'toy'
+}
+
+
+mums_products.prod_list();
+mums_products.prod_list.bind(sons_products)();
