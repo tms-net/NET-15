@@ -1,17 +1,129 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Моё резюме</title>
-        <script src="./resume.js"></script>
+        <title>CV Alexandr Usenko</title>
+        
         <style>
             .root {
                 margin: 0;
+            }
+            *{
+            box-sizing: border-box;            
+            }
+            body 
+            {
+                max-width: 882px;
+                font-family: system-ui;
+                height: 1000px;
+                margin: auto;
+                background-color: #4d4d4d;
+            }
+            pGrey
+            {
+                color: rgb(167, 167, 167);
+            }
+            groupTitle
+            {
+                font-size: 28px;
+            }
+            title2 
+            {
+                font-size: 20px;
+                font-style: normal;
+            }
+            .header 
+            {
+                text-align: center;
+                background: #0c0c0c;
+                color: rgb(196, 196, 196);
+                font-size: 10px;
+            }
+
+            .row 
+            {  
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .side 
+            {
+                flex: 30%;
+                background-color: #2d3d48;
+                padding: 20px;
+                color: white;
+                padding-top: 50px;
+                padding-left: 25px;
+                height: 900px;
+            }
+
+            .main 
+            {
+                flex: 70%;
+                background-color: white;
+                padding: 20px;
+                padding-left: 50px;
+            }
+            .footer
+            {
+                font-size: 10px;
+                text-align: center;
+                color: white;
             }
         </style>
     </head>
     <body>
         <div class="root">
             <!-- HTML Элементы должны добавляться с помощью Javascript -->
+            <div class="header">
+                <p>Не 100% копия CV с LinkedIn</p>
+            </div>
+            
+                <div class="row">
+                    <div class="side">
+    
+                        <div><groupTitle>Communication</groupTitle>
+                            <p><pMobile></pMobile><pGrey>(Mobile)</p>
+                            <p>alex29ecstasy@gmail.com</p>
+                            <p>www.linkedin.com/in/alexandr-usenko-0139a9247 <a href="https://www.linkedin.com/in/alexandr-usenko-0139a9247"><pGrey>(LinkedIn)</pGrey></a></p>
+                            
+                        </div>
+                        <p> </p>
+                        <p> </p>
+                        <div><groupTitle>Skills</groupTitle>
+    
+                            <p>C#</p>
+                            <p>.NET Framework</p>
+                            <p>ASP.NET</p>
+                        </div>
+                    </div>
+                    <div class="main">
+                        <h1></h1>
+                        <p>Student TeachMeSkills</p>
+                        <p><pGrey>Minsk, Belarus</pGrey></p>
+                        <div><groupTitle>Work experience</groupTitle>
+                            <p></p>
+                            <title2></title2>
+                            <p>FullStack C# Developer</p>
+                            <p>February 2022 - Present</p>
+                        </div>
+                        <pGrey>___________________</pGrey>
+                        <p></p>
+                        <div><groupTitle>Education</groupTitle>
+                            <p></p>
+                            <title2>TeachMeSkills</title2>
+                            <p>(2022-2022)</p>
+                            <p></p>
+                            <title2>Minsk State Polytechnic College</title2>
+                            <p>Microelectronics (2009-2012)</p>
+                            <p></p>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="footer">
+                    <p>Page 1 of 1</p>
+                </div>
         </div>
+        <script src="./resume.js"></script>
     </body>
 </html>
