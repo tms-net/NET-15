@@ -4,14 +4,147 @@
         <title>Моё резюме</title>
         <script src="./resume.js"></script>
         <style>
+                *{
+            box-sizing: border-box;            
+            }
+               
+               body 
+            {
+                max-width: 800px;
+                font-family: system-ui;
+                height: 1000px;
+                margin: auto;
+                background-color: #27263D;
+            }
+              
+              
+              
+              .upperSide
+            {
+               
+                color: rgb(255, 255, 255);
+                font-size: 50px;
+            }
+            .block 
+            {  
+                display: flex;
+                
+                flex-wrap: wrap;
+            }
+            .leftSide 
+            {
+                flex: 60%;
+                background-color: #3B3A3D;
+                padding: 20px;
+                color: rgb(255, 255, 255);
+                padding-top: 50px;
+                padding-left: 25px;
+                height: 900px;
+            }
+
+            .rightSide
+            {
+                flex: 40%;
+                background-color: #6E6C78;
+                padding: 20px;
+                color: rgb(255, 255, 255);
+                padding-left: 50px;
+            }
+            .through
+            {
+                font-size: 10px;
+                text-align: center;
+                color: white;
+            }
+            .push 
+            {
+                list-style: none;
+            }
+             
+.push li {
+  position: relative;
+  padding: 20px 0 20px 40px;
+  color: #d8d8d8;
+  
+  font-weight: bold;
+  
+}
+.push li:before {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #d9dbdb;
+  content: "";
+  left: 0;
+  transition: .3s ease-in-out;
+  top: 27px;
+}
+.push li:after {
+  position: absolute;
+  border-left: 1px dotted #ffffff;
+  width: 1px;
+  bottom: -12px;
+  content: "";
+  left: 3px;
+  top: 48px;
+}
             .root {
                 margin: 0;
             }
         </style>
     </head>
     <body>
-        <div class="root">
-            <!-- HTML Элементы должны добавляться с помощью Javascript -->
-        </div>
+        
+        <div class="upperSide" ><h1 ></h1> </div>
+        
+        <div class="block" > 
+            <div class="leftSide">
+        <p ><myName></myName></p>
+        
+        
+       <p> <myEmail></myEmail></p>
+
+       <p>__________________________________________________</p>
+       <work> </work>
+       <ul class="push">
+           <li>СУ-68</li>
+           <li>Облицовщик-плиточник</li>
+           <li><ul class="push">Обязанности:</li>
+           <li>Облицовка стен</li>
+           <li>Облицовка полов</li>
+           <li>Стяжка пола</li>
+       </ul>
+         </ul> 
+         <education> </education>
+         <ul class="push">
+            <li>МГПЛ №10</li>
+            <li>Мастер отделочных работ</li>
+         </ul>
+         <p>__________________________________________________</p>
+    </div>
+     <div class="rightSide">
+        <aboutMe> </aboutMe>
+        <p>___________________</p>
+        <p>Являюсь учеником TeachMeSkills:</p>
+        <ul>
+            <li>C#</li>
+            <li>HTML</li>
+            <li>JS</li>
+            <li>продолжение следует...</li>
+        </ul>
+    
+</div>
+    
+    
+    <div class="through">
+        <button onclick="changeColor();">Нажми на меня</button>
+    </div>
+    
+
+</div>
+        <script src="./resume.js"></script>
+       
+       
     </body>
 </html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+work{ color: blue; font-size: 40px;}
+resume {color:red; font-size: 40px; text-align: center; background-color:  ; font-family: impact; }
+package {color: white; font-family: Arial Black; font-size: 30px }
+
+.fond {
+  background-image: linear-gradient(20deg, rgba(0,255,255) 20%, rgba(0,0,255) 90%);;
+}
+.boxer {
+  border: 5px solid rebeccapurple;
+  border-radius: 1em;
+  border-top-right-radius: 10% 60%;
+}
+ 
+</style>
+</head>
+<body>
+<div class="fond">
+
+<div class="boxer"><resume>Резюме</resume></div>
+
+<div><p><package>Личные данные</package></p>
+
+
+<li>Усенко Евгений Игоревич</li>
+<li>ysen1997@gmail.com</li>
+
+</div>
+
+<div><package>Работа</package>
+
+
+<li>Облицовщик-плиточник</li>
+<li>филиал СУ-68 "ОАО Стройтрест №4"</li>
+<li>Обязанности:</li>
+<ul>
+<li>Укладка плитки на пол</li>
+<li>Облицовка стен плиткой</li>
+<li>Стяжка пола</li>
+</ul>
+
+</div>
+<package>Образование</package>
+<ul>
+<li>МГПЛ №10</li>
+<li>Мастер отделочных работ</li>
+</ul>
+<package>О себе</package>
+<p> Пытаюсь учить C#</p>
+</div>
+</div>
+</body>
+</html>
