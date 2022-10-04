@@ -13,7 +13,8 @@ export class Medium extends Component {
             text: '',
             isSent: false,
             isError: false,
-            isTitleValid: undefined
+            isTitleValid: undefined,
+            isTextValid: undefined
         };
 
         this.handleTitleChange = this.handleTitleChange.bind(this);
@@ -30,7 +31,8 @@ export class Medium extends Component {
 
     handleTextChange(text) {
         this.setState({
-            text: text
+            text: text.target.value,
+            isTextValid: !!text.target.value
         });
     }
 
@@ -125,9 +127,10 @@ export class Medium extends Component {
     validateFields() {
         var isValid = true;
 
-        if (!this.state.title) { // title -> undefined, '', null ...
+        if (!this.state.title || !this.state.text) { // title -> undefined, '', null ...
             this.setState({
-                isTitleValid: false
+                isTitleValid: false,
+                isTextValid: false
             })
 
             isValid = false;
@@ -170,7 +173,8 @@ export class Medium extends Component {
                             Текст
                         </Label>
                         <Col sm={10}>
-                            <MDEditor
+                            <Input
+                                invalid={this.state.isTextValid === false ? true : undefined}
                                 value={this.state.text}
                                 onChange={this.handleTextChange} />
                             {/*<MDEditor.Markdown source={this.state.text} style={{ whiteSpace: 'pre-wrap' }} />*/}
